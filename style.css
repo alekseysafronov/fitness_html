@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Manrope, sans-serif;
+    src: url(media/fonts/Manrope-Regular.ttf);
+    src: url(media/fonts/Manrope-Bold.ttf);
+    src: url(media/fonts/Manrope-SemiBold.ttf);
+}
+
+* {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: azure;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    text-transform: uppercase;
+}
