@@ -1,35 +1,52 @@
-/* #region ___ */ --- /* #endregion */
+/* #region ___ */ /* #endregion */
 /* #region Main */
 @font-face {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     src: url(media/fonts/Manrope-Regular.ttf);
 }
 @font-face {
-    font-family: 'Manrope bold';
+    font-family: "Manrope bold";
     src: url(media/fonts/Manrope-Bold.ttf);
 }
 @font-face {
-    font-family: 'Manrope semi';
+    font-family: "Manrope semi";
     src: url(media/fonts/Manrope-SemiBold.ttf);
 }
 
 * {
-    font-family: sans-serif;
-    /* font-family: 'Manrope'; */
+    font-family: "Manrope", sans-serif;
 }
 
 body {
-    background-color: rgb(221, 221, 221);
+    background-color: #E2E8ED;
+}
+
+h1, h2, h3 {
+    font-family: "Manrope bold";
 }
 
 h1 {
     font-size: 46px;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {font-size: 25px;}
+
+p {
+    margin-bottom: 30px;
 }
 
 .container {
     max-width: 1000px;
     margin: auto;
 }
+
+.flex {
+    display: flex;
+}
+
+.footer {min-height: 600px;}
 
 /* #endregion */
 
@@ -113,9 +130,9 @@ ul li {
     margin: 15px;
 }
 
-/* #endregion */
 
-.course a  {
+
+.course a, .blue_btn  {
     background-color: rgb(42, 147, 212);
     color: white;
     padding: 15px 50px;
@@ -125,4 +142,49 @@ ul li {
 
 }
 
+/* #endregion */
 
+/* #region CTA */ 
+
+.cta {
+    background-image: url(media/img/5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+    border-radius: 20px;
+
+}
+
+.cta_content {
+    margin: 30px;
+    padding: 50px;
+    width: 50%;
+}
+
+/* #endregion */
+
+
+/* #region Rastyajka */ 
+
+.rastyazka {
+    display: flex;
+    min-height: 200px;
+
+}
+
+.rast_left {
+    width: 50%;
+    background-image: url(media/img/6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+}
+
+.rast_right {
+    width: 50%;
+    /* background-color: white; */
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+/* #endregion */
