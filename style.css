@@ -1,17 +1,39 @@
+/* #region ___ */ --- /* #endregion */
+/* #region Main */
 @font-face {
-    font-family: Manrope, sans-serif;
+    font-family: 'Manrope';
     src: url(media/fonts/Manrope-Regular.ttf);
+}
+@font-face {
+    font-family: 'Manrope bold';
     src: url(media/fonts/Manrope-Bold.ttf);
+}
+@font-face {
+    font-family: 'Manrope semi';
     src: url(media/fonts/Manrope-SemiBold.ttf);
 }
 
 * {
     font-family: sans-serif;
+    /* font-family: 'Manrope'; */
 }
 
 body {
-    background-color: azure;
+    background-color: rgb(221, 221, 221);
 }
+
+h1 {
+    font-size: 46px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* #endregion */
+
+/* #region Header */
 
 .header {
     display: flex;
@@ -24,3 +46,83 @@ ul li {
     display: inline;
     text-transform: uppercase;
 }
+
+
+
+/* #endregion */
+
+/* #region Hero */ 
+
+.hero {
+    display: flex;
+    min-height: 600px;
+    width: 1200px;
+
+}
+
+.hero_left {
+    width: 50%;
+}
+
+.hero_left p {
+    margin-bottom: 60px ;
+}
+
+.hero_left a {
+    background-color: rgb(42, 147, 212);
+    color: white;
+    padding: 15px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+
+
+}
+
+.hero_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(media/img/1.png);
+    background-repeat: no-repeat;
+}
+
+/* #endregion */
+
+/* #region Course */ 
+
+.course .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course h2 {
+    font-size: 40px;
+}
+
+.courses {
+    display: flex;
+    margin-bottom: 30px
+}
+
+.course1, .course2, .course3 {
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 20px;
+    margin: 15px;
+}
+
+/* #endregion */
+
+.course a  {
+    background-color: rgb(42, 147, 212);
+    color: white;
+    padding: 15px 50px;
+    border-radius: 10px;
+    text-decoration: none;
+
+
+}
+
+
