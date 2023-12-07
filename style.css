@@ -21,7 +21,7 @@ body {
     background-color: #E2E8ED;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, li {
     font-family: "Manrope bold";
 }
 
@@ -46,10 +46,13 @@ p {
     display: flex;
 }
 
-/* .footer {min-height: 600px;} */
-
 .left {width: 50%;}
 .right {width: 50%;}
+
+body > div.hero.container > div.hero_left > a {
+    border: thick double #E2E8ED;
+}
+
 
 /* #endregion */
 
@@ -59,12 +62,53 @@ p {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 60px;
+}
+
+.header_icons {
+    display: flex;
+}
+
+.cover1 {
+    width: 50px;
+    height: 50px;
+    background-image: url(media/img/search.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 200%;
+
+}
+.cover2 {
+    width: 50px;
+    height: 50px;
+    background-image: url(media/img/cart.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 200%;
+
+}
+.cover3 {
+    width: 50px;
+    height: 50px;
+    background-image: url(media/img/home.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 200%;
+
 }
 
 ul li {
     list-style: none;
     display: inline;
     text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    /* font-family: 'Manrope-Bold'; */
 }
 
 
@@ -142,7 +186,7 @@ ul li {
     border-radius: 10px;
     text-decoration: none;
 
-
+    border: thick double #E2E8ED;
 }
 
 /* #endregion */
@@ -165,7 +209,6 @@ ul li {
 }
 
 /* #endregion */
-
 
 /* #region Rastyajka */ 
 
@@ -193,7 +236,7 @@ ul li {
 
 /* #endregion */
 
-
+/* #region Other */
 
 .treners {
     margin-top: 50px;
@@ -258,6 +301,15 @@ ul li {
     max-width: 300px;
 }
 
+.blue_btn_step {
+    background-color: rgb(42, 147, 212);
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+
 .how_it_works h2 {
     text-align: center;
     margin-top: 100px;
@@ -281,3 +333,5 @@ ul li {
     margin-top: 100px;
     align-items: center;
 }
+
+ /* #endregion */
