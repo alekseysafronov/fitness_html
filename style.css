@@ -15,6 +15,7 @@
 
 * {
     font-family: "Manrope", sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -44,6 +45,11 @@ p {
 
 .flex {
     display: flex;
+    align-items: end;
+}
+
+.between {
+    justify-content: space-between;
 }
 
 .left {width: 50%;}
@@ -126,6 +132,7 @@ ul li {
 
 .hero_left {
     width: 50%;
+    margin-top: 40px;
 }
 
 .hero_left p {
@@ -143,17 +150,26 @@ ul li {
 }
 
 .hero_right {
-    width: 100%;
+    width: 60%;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-image: url(media/img/1.png);
     background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+
 }
 
 /* #endregion */
 
 /* #region Course */ 
+.courses {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px
+
+}
 
 .course .container {
     display: flex;
@@ -162,31 +178,30 @@ ul li {
 }
 
 .course h2 {
-    font-size: 40px;
+    font-size: 38px;
 }
 
-.courses {
-    display: flex;
-    margin-bottom: 30px
-}
 
 .course1, .course2, .course3 {
     background-color: white;
-    padding: 10px 40px;
+    padding: 10px 40px 0 40px;
     border-radius: 20px;
     margin: 15px;
 }
 
-
+.course h3 {
+    text-align: center;
+    font-size: 20px;
+}
 
 .course a, .blue_btn  {
     background-color: rgb(42, 147, 212);
     color: white;
     padding: 15px 50px;
     border-radius: 10px;
+    border: thick double #E2E8ED;
     text-decoration: none;
 
-    border: thick double #E2E8ED;
 }
 
 /* #endregion */
@@ -234,6 +249,16 @@ ul li {
     border-radius: 20px;
 }
 
+.qwer {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.up {
+    margin-top: 60px;
+}
+
 /* #endregion */
 
 /* #region Other */
@@ -252,11 +277,14 @@ ul li {
     padding: 10px 40px;
     border-radius: 20px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .tr_card p {
     font-size: 12px;
-    margin-bottom: 5px;
+    margin: 0px;
 }
 .tr_card h4 {
     margin: 5px;
@@ -278,7 +306,12 @@ ul li {
 .about {
     display: flex;
     margin-top: 100px;
-    /* background-color: #eaeff3; */
+    margin-bottom: 100px;
+    background-color: #eaeff3;
+}
+
+.about p {
+    padding: 0 10px;
 }
 
 .about .right {
@@ -316,11 +349,21 @@ ul li {
     margin-bottom: 50px;
 }
 
+
+.step {
+    padding: 0 10px;
+}
+
+
 .form {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 100px;
     width: 600px;
     box-sizing: border-box;
+}
+
+body > div.form.container > p {
+    text-align: center;
 }
 
 .form form {
@@ -334,4 +377,112 @@ ul li {
     align-items: center;
 }
 
+
+body > div.treners.container > div.up > a.blue_btn {
+    border: #E2E8ED;
+}
+
+
+body > div.treners.container > div.down > div:nth-child(1) > p {
+    max-width: 250px;
+    margin-right: 20px;
+}
+
+body > div.form.container > p {
+    max-width: 600px;
+}
+
+
+.form {
+    /* background-color: #eaeff3; */
+    background: linear-gradient(90deg, rgb(240, 240, 240) 0%, rgba(255,255,255,1) 100%);
+    min-width: 1100px;
+    min-height: 800px;
+    border-radius: 20px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.form h2 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.form form {
+    width: 500px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #bebebf;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+form input[type="phone"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #bebebf;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+form input[type="email"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 1px solid #bebebf;
+    padding: 0 10px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+fieldset {
+border: none;
+padding: 0;
+margin-bottom: 20px;
+margin-top: 15px;
+padding-top: 5px;
+}
+
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+
+    
+
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.flexqq {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.footer {
+    font-size: 12px;
+}
+
+.social img{
+    padding: 5px;
+}
+
  /* #endregion */
+
+
+
