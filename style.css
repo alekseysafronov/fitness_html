@@ -26,9 +26,19 @@ h1, h2, h3, h4, h5, h6, li {
     font-family: "Manrope bold";
 }
 
+li:hover {
+    color: #3586ff;
+    
+
+}
+
 .cover1, .cover2, .cover3 {
     cursor: pointer;
 }
+
+
+
+
 
 h1 {
     font-size: 46px;
@@ -200,13 +210,17 @@ ul li {
 }
 
 .course a, .blue_btn  {
-    background-color: rgb(42, 147, 212);
+    background-color: #3586ff;
     color: white;
     padding: 15px 50px;
     border-radius: 10px;
     border: thick double #E2E8ED;
     text-decoration: none;
 
+}
+
+.blue_btn:hover {
+    background-color: #3778da;
 }
 
 /* #endregion */
@@ -219,6 +233,8 @@ ul li {
     background-size: cover;
     min-height: 300px;
     border-radius: 20px;
+    margin-top: 120px;
+    margin-bottom: 150px;
 
 }
 
@@ -239,8 +255,21 @@ ul li {
 
 }
 
+.rastyazka h3 {
+    margin: 0;
+    font-size: 16px;
+    font-family: "Manrope semi";
+    text-transform: uppercase;
+}
+
+.rastyazka h2 {
+    margin: 0;
+    font-size: 36px;
+}
+
 .rast_left {
     width: 50%;
+    min-height: 350px;
     background-image: url(media/img/6.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,6 +281,10 @@ ul li {
     /* background-color: white; */
     padding: 10px 20px;
     border-radius: 20px;
+}
+
+.rast_right .flex {
+    margin-top: 40px;
 }
 
 .qwer {
@@ -342,7 +375,7 @@ ul li {
 }
 
 .blue_btn_step {
-    background-color: rgb(42, 147, 212);
+    background-color: #3586ff;
     color: white;
     padding: 5px 20px;
     border-radius: 10px;
@@ -487,6 +520,11 @@ input[type="checkbox"] {
 
 .social img{
     padding: 10px;
+}
+
+
+body > div.footer.container > p:nth-child(3) {
+    text-decoration: gray underline;
 }
 
  /* #endregion */
